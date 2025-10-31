@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TargetResume - AI Job Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 TargetResume</h1>
+    <p class="description">
+      Upload your resume and compare it with a job description to see your match score. 
+      Get insights on keywords to improve your chances of landing your dream job!
+    </p>
+
+    <div class="upload-section">
+      <label for="resume">Upload Resume (PDF, DOCX, TXT):</label>
+      <input type="file" id="resume" accept=".pdf,.doc,.docx,.txt">
+    </div>
+
+    <div class="job-section">
+      <label for="job">Paste Job Description:</label>
+      <textarea id="job" placeholder="Paste job description here..."></textarea>
+    </div>
+
+    <button id="matchBtn">Analyze Match 🔍</button>
+
+    <div class="score-container">
+      <div class="score-bar" id="scoreBar"></div>
+    </div>
+
+    <div id="result" class="result"></div>
+    <div id="keywords" class="keywords"></div>
+
+    <footer>
+      Developed by <strong>Nithin Male</strong>
+    </footer>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.105/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
