@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Job Description Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Job Description Matcher</h1>
+
+    <label for="resume">Upload your Resume (PDF or DOCX):</label>
+    <input type="file" id="resume" accept=".pdf,.docx,.txt">
+
+    <textarea id="job" placeholder="Paste the job description here..."></textarea>
+    <button id="matchBtn">Analyze Match</button>
+
+    <div id="result"></div>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.105/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
